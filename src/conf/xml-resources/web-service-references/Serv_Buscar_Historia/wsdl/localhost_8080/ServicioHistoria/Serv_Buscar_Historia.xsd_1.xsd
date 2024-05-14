@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://servicio/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicio/">
+
+<xs:element name="ServBuscarHistoria" type="tns:ServBuscarHistoria"/>
+
+<xs:element name="ServBuscarHistoriaResponse" type="tns:ServBuscarHistoriaResponse"/>
+
+<xs:element name="ServListarHistoria" type="tns:ServListarHistoria"/>
+
+<xs:element name="ServListarHistoriaResponse" type="tns:ServListarHistoriaResponse"/>
+
+<xs:complexType name="ServListarHistoria">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ServListarHistoriaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:historia" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="historia">
+<xs:sequence>
+<xs:element name="ale" type="xs:string" minOccurs="0"/>
+<xs:element name="ape" type="xs:string" minOccurs="0"/>
+<xs:element name="apeRes" type="xs:string" minOccurs="0"/>
+<xs:element name="cod" type="xs:string" minOccurs="0"/>
+<xs:element name="dir" type="xs:string" minOccurs="0"/>
+<xs:element name="dni" type="xs:string" minOccurs="0"/>
+<xs:element name="dniRes" type="xs:string" minOccurs="0"/>
+<xs:element name="edad" type="xs:string" minOccurs="0"/>
+<xs:element name="enf" type="xs:string" minOccurs="0"/>
+<xs:element name="fec" type="xs:string" minOccurs="0"/>
+<xs:element name="hora" type="xs:string" minOccurs="0"/>
+<xs:element name="nom" type="xs:string" minOccurs="0"/>
+<xs:element name="nomRes" type="xs:string" minOccurs="0"/>
+<xs:element name="ope" type="xs:string" minOccurs="0"/>
+<xs:element name="pro" type="xs:string" minOccurs="0"/>
+<xs:element name="res" type="xs:string" minOccurs="0"/>
+<xs:element name="telRes" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ServBuscarHistoria">
+<xs:sequence>
+<xs:element name="dni" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ServBuscarHistoriaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:historia" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

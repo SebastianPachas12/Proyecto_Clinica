@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/ServicioValidarEmpleado/ServicioValidarEmpleado?wsdl" uri="wsdl/localhost_8080/ServicioValidarEmpleado/ServicioValidarEmpleado.wsdl"/>
+    <system systemId="http://localhost:8080/ServicioValidarEmpleado/ServicioValidarEmpleado?xsd=1" uri="wsdl/localhost_8080/ServicioValidarEmpleado/ServicioValidarEmpleado.xsd_1"/>
+    <system systemId="http://localhost:8080/ServicioHorario/ServicioHorario?wsdl" uri="wsdl/localhost_8080/ServicioHorario/ServicioHorario.wsdl"/>
+    <system systemId="http://localhost:8080/ServicioHorario/ServicioHorario?xsd=1" uri="wsdl/localhost_8080/ServicioHorario/ServicioHorario.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ServicioBusqueda/ServicioBuscar?wsdl" uri="wsdl/localhost_8080/ServicioBusqueda/ServicioBuscar.wsdl"/>
+    <system systemId="http://localhost:8080/ServicioBusqueda/ServicioBuscar?xsd=1" uri="wsdl/localhost_8080/ServicioBusqueda/ServicioBuscar.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ServicioHistoria/Serv_Buscar_Historia?wsdl" uri="wsdl/localhost_8080/ServicioHistoria/Serv_Buscar_Historia.wsdl"/>
+    <system systemId="http://localhost:8080/ServicioHistoria/Serv_Buscar_Historia?xsd=1" uri="wsdl/localhost_8080/ServicioHistoria/Serv_Buscar_Historia.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Servicio_Grabar_Historia/Serv_Grabar_Historia?wsdl" uri="wsdl/localhost_8080/Servicio_Grabar_Historia/Serv_Grabar_Historia.wsdl"/>
+    <system systemId="http://localhost:8080/Servicio_Grabar_Historia/Serv_Grabar_Historia?xsd=1" uri="wsdl/localhost_8080/Servicio_Grabar_Historia/Serv_Grabar_Historia.xsd_1.xsd"/>
+</catalog>

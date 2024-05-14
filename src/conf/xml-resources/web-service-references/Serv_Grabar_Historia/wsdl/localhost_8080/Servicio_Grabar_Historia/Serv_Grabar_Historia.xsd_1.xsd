@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://servicio2/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicio2/">
+
+<xs:element name="Grabar_Historia" type="tns:Grabar_Historia"/>
+
+<xs:element name="Grabar_HistoriaResponse" type="tns:Grabar_HistoriaResponse"/>
+
+<xs:complexType name="Grabar_Historia">
+<xs:sequence>
+<xs:element name="nom" type="xs:string" minOccurs="0"/>
+<xs:element name="ape" type="xs:string" minOccurs="0"/>
+<xs:element name="dni" type="xs:string" minOccurs="0"/>
+<xs:element name="dir" type="xs:string" minOccurs="0"/>
+<xs:element name="pro" type="xs:string" minOccurs="0"/>
+<xs:element name="edad" type="xs:string" minOccurs="0"/>
+<xs:element name="res" type="xs:string" minOccurs="0"/>
+<xs:element name="nomRes" type="xs:string" minOccurs="0"/>
+<xs:element name="apeRes" type="xs:string" minOccurs="0"/>
+<xs:element name="dniRes" type="xs:string" minOccurs="0"/>
+<xs:element name="telRes" type="xs:string" minOccurs="0"/>
+<xs:element name="enf" type="xs:string" minOccurs="0"/>
+<xs:element name="ale" type="xs:string" minOccurs="0"/>
+<xs:element name="ope" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Grabar_HistoriaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

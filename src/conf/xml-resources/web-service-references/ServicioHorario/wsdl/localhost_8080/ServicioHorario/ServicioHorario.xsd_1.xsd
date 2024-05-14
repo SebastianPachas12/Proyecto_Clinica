@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://servicio/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicio/">
+
+<xs:element name="ServicioFiltroHorario" type="tns:ServicioFiltroHorario"/>
+
+<xs:element name="ServicioFiltroHorarioResponse" type="tns:ServicioFiltroHorarioResponse"/>
+
+<xs:element name="ServicioGrabarHorario" type="tns:ServicioGrabarHorario"/>
+
+<xs:element name="ServicioGrabarHorarioResponse" type="tns:ServicioGrabarHorarioResponse"/>
+
+<xs:element name="ServicioListarHorario" type="tns:ServicioListarHorario"/>
+
+<xs:element name="ServicioListarHorarioResponse" type="tns:ServicioListarHorarioResponse"/>
+
+<xs:complexType name="ServicioFiltroHorario">
+<xs:sequence>
+<xs:element name="esp" type="xs:string" minOccurs="0"/>
+<xs:element name="fec" type="xs:string" minOccurs="0"/>
+<xs:element name="hor" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ServicioFiltroHorarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:horario" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="horario">
+<xs:sequence>
+<xs:element name="cod" type="xs:string" minOccurs="0"/>
+<xs:element name="con" type="xs:string" minOccurs="0"/>
+<xs:element name="dis" type="xs:string" minOccurs="0"/>
+<xs:element name="esp" type="xs:string" minOccurs="0"/>
+<xs:element name="fec" type="xs:string" minOccurs="0"/>
+<xs:element name="hor" type="xs:string" minOccurs="0"/>
+<xs:element name="nom" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ServicioGrabarHorario">
+<xs:sequence>
+<xs:element name="nom" type="xs:string" minOccurs="0"/>
+<xs:element name="esp" type="xs:string" minOccurs="0"/>
+<xs:element name="fec" type="xs:string" minOccurs="0"/>
+<xs:element name="hor" type="xs:string" minOccurs="0"/>
+<xs:element name="con" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ServicioGrabarHorarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ServicioListarHorario">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ServicioListarHorarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:horario" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

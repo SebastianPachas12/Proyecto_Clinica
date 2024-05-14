@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
+
+.img{
+    background-image: url("img/historiaclinica.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+ }
+
+ .form-floating{
+     position: relative;
+ }
+ .bi-person-fill{
+     position: absolute;
+     top: calc(35%);
+     left: 0.45rem;
+ }
+ .bi-upc{
+     position: absolute;
+     top: calc(35%);
+     left: 0.45rem;
+ }
+ .bi-pin-map-fill{
+     position: absolute;
+     top: calc(35%);
+     left: 0.45rem;
+ }
+ .bi-postcard-fill{
+     position: absolute;
+     top: calc(35%);
+     left: 0.45rem;
+ }
+ .bi-file-text-fill{
+     position: fixed;
+     left:25rem;
+     height:9vh;
+ }
+ .form-floating label, .form-floating .form-control{
+     left: 1rem;
+     padding-left: 1.6rem;
+ }
